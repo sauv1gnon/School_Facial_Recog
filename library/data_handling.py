@@ -9,11 +9,11 @@ class ProgramState:
     registeringpersonnel = False
 
     # The Camera
-    capture = cv2.VideoCapture(0)
+    capture = cv2.VideoCapture(1)
 
     def __init__(self):
         super().__init__()
-        self.capture = cv2.VideoCapture(0)
+        self.capture = cv2.VideoCapture(1)
     
     # For GUIs
     def change_state_student(self, state_change):
